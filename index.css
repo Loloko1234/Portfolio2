@@ -1,0 +1,71 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo1 {
+  width: 70px;
+  height: 70px;
+  margin: 20px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 17px;
+  color: black;
+}
+.logo-container {
+  position: relative;
+  margin-left: 30px;
+}
+
+.logo-container::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 35%;
+  height: 30%;
+  border-right: 1px solid black;
+}
+#LogoM {
+  margin-left: 25px;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 5px;
+  transition: letter-spacing 0.5s ease-in-out;
+}
+#LogoM:hover {
+  color: #252525;
+  letter-spacing: 10px;
+}
+.hire {
+  margin-right: 40px;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  letter-spacing: 5px;
+  color: black;
+  font-weight: 600;
+  font-size: 17px;
+  margin-right: 75px;
+  transition: letter-spacing 0.5s ease-in-out;
+}
+.hire:hover {
+  color: #252525;
+  letter-spacing: 7px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+}
+.logo2 {
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+}
