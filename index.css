@@ -86,3 +86,9 @@ main {
 .header {
   border-top: 35px solid white;
 }
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
