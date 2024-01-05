@@ -24,10 +24,14 @@
 }
 .logo-container {
   position: relative;
-  margin-left: 30px;
+  margin-left: 65px;
 }
 
-.logo-container::after {
+.logo-image {
+  position: relative;
+}
+
+.logo-image::after {
   content: "";
   position: absolute;
   right: 0;
@@ -53,7 +57,7 @@
   color: black;
   font-weight: 600;
   font-size: 17px;
-  margin-right: 75px;
+  margin-right: 110px;
   transition: letter-spacing 0.5s ease-in-out;
 }
 .hire:hover {
@@ -68,4 +72,17 @@
   width: 50px;
   height: 50px;
   margin: 20px;
+}
+.header > div {
+  display: flex;
+  align-items: center;
+}
+
+main {
+  margin: 35px 30px;
+  background-color: #f4f9fc;
+  height: 2000px;
+}
+.header {
+  border-top: 35px solid white;
 }
