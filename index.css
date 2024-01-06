@@ -50,7 +50,6 @@
   letter-spacing: 10px;
 }
 .hire {
-  margin-right: 40px;
   font-family: "Lato", sans-serif;
   text-decoration: none;
   letter-spacing: 5px;
@@ -81,7 +80,7 @@
 main {
   margin: 35px 30px;
   background-color: #f4f9fc;
-  height: 2000px;
+  height: 1000vh;
 }
 .header {
   border-top: 35px solid white;
@@ -91,4 +90,76 @@ main {
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+.photo {
+  margin-left: 120px;
+}
+.welcome {
+  font-size: 130px;
+  margin-left: 40px;
+  font-family: "Montserrat", sans-serif;
+}
+#welcome1 {
+  display: block;
+}
+#welcome2 {
+  font-family: "Lato", sans-serif;
+  font-size: 130px;
+}
+@media (max-width: 1050px) {
+  .centered {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .photo {
+    margin-left: 0px;
+  }
+  .welcome {
+    font-size: 60px;
+    margin-top: -20px;
+    margin-left: 0px;
+  }
+  #welcome2 {
+    font-size: 60px;
+  }
+  .logo-container {
+    margin-left: 35px;
+  }
+  .navbar .hire {
+    margin-right: 80px;
+  }
+  .header {
+    padding: 0px 10px;
+  }
+}
+
+@media (max-width: 1694px) {
+  .photo {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 512px) {
+  main {
+    margin: 15px 10px;
+  }
+  .header {
+    border-top: 15px solid white;
+  }
+  .navbar .logo2 {
+    display: none;
+  }
+  .navbar .hire {
+    margin-right: 50px;
+    font-size: 14px;
+  }
+  .logo-container {
+    margin-left: 0px;
+  }
+  .logo {
+    font-size: 14px;
+  }
+  .header {
+    padding: 0px 10px;
+  }
 }
