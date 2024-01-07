@@ -92,12 +92,13 @@ main {
   height: 100vh;
 }
 .photo {
-  margin-left: 120px;
 }
 .welcome {
   font-size: 130px;
   margin-left: 40px;
   font-family: "Montserrat", sans-serif;
+  width: 1000px;
+  text-align: left;
 }
 #welcome1 {
   display: block;
@@ -106,6 +107,55 @@ main {
   font-family: "Lato", sans-serif;
   font-size: 130px;
 }
+
+.opis {
+  font-size: 23px;
+  font-family: "Lato", sans-serif;
+  display: block;
+  margin-top: 20px;
+  margin-left: 10px;
+  width: 80%;
+  text-align: left;
+}
+#welcome2 {
+  overflow: hidden;
+  border-right: 0.08em solid rgb(0, 0, 0);
+  display: inline-block;
+  animation: typing 1s steps(40, end), blink-caret 0.75s step-end infinite;
+  margin-bottom: -30px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 40%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(0, 0, 0);
+  }
+}
+.opis strong {
+  color: rgb(22, 4, 4);
+}
+@media (max-width: 1694px) {
+  .photo {
+    margin-left: 0px;
+  }
+  .welcome {
+    font-size: 100px;
+    margin-left: 0px;
+  }
+}
+
 @media (max-width: 1050px) {
   .centered {
     display: flex;
@@ -117,8 +167,9 @@ main {
   }
   .welcome {
     font-size: 60px;
-    margin-top: -20px;
     margin-left: 0px;
+    text-align: center;
+    margin-top: -30px;
   }
   #welcome2 {
     font-size: 60px;
@@ -132,11 +183,23 @@ main {
   .header {
     padding: 0px 10px;
   }
-}
-
-@media (max-width: 1694px) {
-  .photo {
-    margin-left: 0px;
+  .opis {
+    font-size: 17px;
+    width: 60%;
+    text-align: center;
+    margin: 30px auto;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 19%;
+    }
+  }
+  #welcome2 {
+    animation: typing 0.6s steps(40, end), blink-caret 0.75s step-end infinite;
+    margin-bottom: -15px;
   }
 }
 @media (max-width: 512px) {
@@ -161,5 +224,22 @@ main {
   }
   .header {
     padding: 0px 10px;
+  }
+  .opis {
+    width: 35%;
+  }
+  .welcome {
+    font-size: 40px;
+    margin-left: 0px;
+    text-align: center;
+    margin-top: -10px;
+  }
+  #welcome2 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 716px) {
+  .opis {
+    max-width: 42%;
   }
 }
