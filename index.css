@@ -152,7 +152,7 @@
 .container2 {
   margin: 35px 30px;
   background-color: #73bbc5;
-  height: 92 vh;
+  height: 93vh;
 }
 .home {
   display: flex;
@@ -171,7 +171,6 @@
 }
 
 .home a {
-  padding-top: -20px;
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 40px;
@@ -205,6 +204,16 @@
 .socials a:hover {
   transform: scale(1.2);
 }
+.projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.projects-container img {
+  width: 300px;
+  height: 300px;
+}
 @media (max-width: 1694px) {
   .photo {
     margin-left: 0px;
@@ -215,6 +224,10 @@
   }
 }
 @media (max-width: 1050px) {
+  .menu {
+    padding-top: 90px;
+    margin-left: 20px;
+  }
   .centered {
     display: flex;
     flex-direction: column-reverse;
@@ -261,7 +274,23 @@
   }
 }
 @media (max-width: 512px) {
+  .home div:nth-child(1) {
+    margin-top: 20px;
+  }
+  .home div {
+    margin-left: 0px;
+  }
+  .menu {
+    padding-top: 80px;
+    margin-left: 5px;
+  }
   main {
+    margin: 15px 10px;
+  }
+  .container {
+    margin: 15px 10px;
+  }
+  .container2 {
     margin: 15px 10px;
   }
   .header {
@@ -299,6 +328,12 @@
 @media (max-width: 716px) {
   .opis {
     max-width: 42%;
+  }
+  .home a {
+    font-size: 30px;
+  }
+  .home a:hover {
+    letter-spacing: 10px;
   }
   @keyframes typing {
     from {
